@@ -66,3 +66,53 @@ while a < 81:
 print("el 7 de espadas salió", espada, "veces")
 print("el as de basto salió", basto, "veces")
 print("salieron", impar, "numeros impares")
+WHILE POR EVENTO 
+"""generar valores entre 10 y 1000 y sumarlos
+finalizar la suma cuando la suma supere los 10000"""
+import random
+suma = 0
+COMPROBACION DE NUMEROS PRIMOS
+import random
+a = random.randint(1,1000)
+div = 1
+cont = 0
+while div <= a:
+    if a % div == 0:
+        cont = cont + 1
+    div = div + 1
+if cont<= 2:
+    print("el nro", a," es primo")
+else:
+    print( a ,"no lo es")
+
+
+cont = 0
+while suma <= 10000:
+    valor = random.randint(100,1000)
+    suma = suma + valor
+    cont = cont + 1
+print ("la suma fue", suma)
+print("se realizaron ", cont, "vueltas")
+
+for i in range(10): # for <variable> in range <rango>:
+print (i, end=" ")
+un for es igual al while por conteo, no puedo utilizar un for sin saber la cantidad de vueltas que quiero que de
+
+# for
+print("con for")
+for i in range(10): # for <variable> in range (<rango>)
+    print(i, end=" ")
+# for v2
+print()
+for i in range(0,10): # for <variable> in range (<vi, vf>)
+    print(i, end=" ")
+print()
+# for v3
+for i in range(0,10,2): # for <variable> in range (<vi, vf, paso>)
+    print(i, end=" ")
+print()
+for i in range (30, 0, -1): # for <variable> in range (<vi, vf, paso>)
+    print(i, end=" ")
+print()
+print("fin")
+
