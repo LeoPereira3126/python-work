@@ -1,0 +1,68 @@
+while condicion:
+while por conteo =  instrucciones las cuales se van a repetir n cantidadd de veces. ayuda a recortas las instucciones. se sale del while cuando la condicion sea falsa
+ej:
+a = 0
+while a < 10:
+print(a, end="  ")
+a = a + 1
+resultado
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+ ej 2:
+"""mostrar los valores entre 10 y 30 y que sean pares"""
+a = 10
+while a < 31:
+    if a % 2 == 0:
+        print(a, end=" ")
+    a = a + 1
+resultado
+10,12,14,16,18,20,22,14,26,28,30
+"""mostrar los valores entre 10 y 30 y que sean pares, el contador comienza en 0"""
+a = 10
+while a < 31:
+    if a>= 10 and a % 2 == 0:
+        print(a, end=" ")
+    a = a + 1
+print()
+print("fin")
+import random = 
+random.randint (1,6)
+"""arrojar la bolilla de ruleta 80 veces informar cuantas veces salió
+un valor de la segunda docena (13-24)"""
+import random
+a = 0
+docena = 0
+while a < 81:
+    ruleta = random.randint(0,36)
+    if ruleta <= 24 and ruleta >= 13:
+        print(ruleta, end= " ")
+        docena = docena + 1
+    a = a + 1
+print()
+print("la segunda docena salio", docena, "veces") 
+            
+"""generar dos números aleatorios
+el primero entre 1 y 4, 1 - oro, 2, basto, 3 - espada, 4 - copa
+el segundo numero entre 1 y 12
+informar
+a. cuantas veces salió el 7 de espadas
+b. cuantas veces salió el as de basto
+c- cuantas veces salió un valor impar
+realizar 80 "tiradas"."""
+import random
+a = 0
+espada = 0
+basto = 0
+impar = 0
+while a < 81:
+    palo = random.randint(1,4)
+    nro = random.randint(1,12)
+    if palo == 3 and nro == 7:
+        espada = espada + 1
+    if palo == 2 and nro == 1:
+        basto = basto + 1
+    if nro % 2 != 0:
+        impar = impar + 1
+    a = a + 1
+print("el 7 de espadas salió", espada, "veces")
+print("el as de basto salió", basto, "veces")
+print("salieron", impar, "numeros impares")
