@@ -1,0 +1,95 @@
+#sucesion de Fibonacci
+#generar los primeros 20 valores =)
+
+a,b,cont=1,1,0
+
+while cont<20:
+    c=a+b
+    print (c,end=" ")
+    a=b
+    b=c
+    cont=cont+1
+funciones
+def cartel():
+    print("bienvenido a la clase de funciones")
+
+    
+print("Hola")
+cartel()
+print("fin")
+funciones 2
+#Funcion que imprime un cartel y funcion que imprime
+#el resultado de un calculo, recibiendo 2 valores
+#del programa
+#principal
+
+def producto(a,b):
+    c = a * b
+    print("el producto es", c)
+    
+def cartel():
+    print("welcome")
+
+nro1,nro2=6,7
+print("hola")
+cartel()
+producto(nro1,nro2)
+print("fin")
+def producto(a,b):
+    c = a * b
+    return c
+    
+def cartel():
+    print("welcome")
+
+nro1,nro2=6,7
+print("hola")
+cartel()
+resultado = producto(nro1,nro2)
+print("el producto de a * b es", resultado)
+print("fin")
+o
+nro1,nro2=6,7
+print("hola")
+cartel()
+producto(nro1,nro2)
+print("el producto de a * b es",producto(nro1,nro2))
+print("fin")
+""" generar 50 valores aleatorios entre 10 y 30
+realizar la suma de los valores multiplos de 4
+mostrar el resultado en el programa principal
+determinar si el numero es multiplo de 4 con una funcion"""
+import random
+cont = 0
+suma = 0
+def calculo(a):
+    if a % 4 == 0:
+        return 1
+    else:
+        return 0
+while cont < 50:
+    nro=random.randint(10,30)
+    if calculo(nro) == 1:
+        suma = suma + nro
+    cont = cont + 1
+print("la suma de los multiplos de 4 es", suma)
+""" generar 50 valores aleatorios entre 10 y 30
+realizar la suma de los valores primos
+mostrar el resultado en el programa principal
+determinar si el numero es primos con una funcion"""
+import random
+cont = 0
+suma = 0
+def primitos(a):
+    if a % a == 0 and a % 1 == 0:
+        return 1
+    else:
+        return 0
+while cont < 50:
+    nro=random.randint(10,30)
+    if primitos(nro) == 1:
+        suma = suma + nro
+    cont = cont + 1
+print("la suma de los nros primos es", suma)
+
+
