@@ -81,15 +81,41 @@ import random
 cont = 0
 suma = 0
 def primitos(a):
-    if a % a == 0 and a % 1 == 0:
+    div = 1
+    contdiv = 0
+    while div<=a:
+        if a % div == 0:
+            contdiv = contdiv + 1
+        div = div + 1
+    if contdiv<=2:
         return 1
     else:
         return 0
 while cont < 50:
     nro=random.randint(10,30)
     if primitos(nro) == 1:
+        print("el nro", nro, "es primo")
         suma = suma + nro
     cont = cont + 1
 print("la suma de los nros primos es", suma)
+""" generar 100 nros aleatorios entre el 1 y el 100
+informar cuantos de ellos son nros oblongos
 
+nro oblongo numero que es producto de dos nros consecutivos
+por ej 6 * 7 = 42"""
+import random
+def oblongo(a):
+    cont = 1
+    while cont*(cont + 1) <a:
+        cont = cont + 1
+    if cont * (cont + 1) ==a:
+        return 1
+oblo = 0
+for i in range(100):
+    nro = random.randint(1,100)
+    if oblongo(nro)== 1:
+        print("el nro", nro, "es oblongo")
+        oblo = oblo + 1
+print("salieron", oblo, "nros oblongos")
 
+    
